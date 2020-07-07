@@ -60,21 +60,21 @@ outputs:
           endpoints:
             public:
               make_url:
-                scheme: {get_param: [EndpointMap, TrilioDmApiPublic, protocol]}
-                host: {get_param: [EndpointMap, TrilioDmApiPublic, host]}
-                port: {get_param: [EndpointMap, TrilioDmApiPublic, port]}
+                scheme: {get_param: [EndpointMap, TrilioDatamoverApiPublic, protocol]}
+                host: {get_param: [EndpointMap, TrilioDatamoverApiPublic, host]}
+                port: {get_param: [EndpointMap, TrilioDatamoverApiPublic, port]}
                 path: /v2
             internal:
               make_url:
-                scheme: {get_param: [EndpointMap, TrilioDmApiInternal, protocol]}
-                host: {get_param: [EndpointMap, TrilioDmApiInternal, host]}
-                port: {get_param: [EndpointMap, TrilioDmApiInternal, port]}
+                scheme: {get_param: [EndpointMap, TrilioDatamoverApiInternal, protocol]}
+                host: {get_param: [EndpointMap, TrilioDatamoverApiInternal, host]}
+                port: {get_param: [EndpointMap, TrilioDatamoverApiInternal, port]}
                 path: /v2
             admin:
               make_url:
-                scheme: {get_param: [EndpointMap, TrilioDmApiAdmin, protocol]}
-                host: {get_param: [EndpointMap, TrilioDmApiAdmin, host]}
-                port: {get_param: [EndpointMap, TrilioDmApiAdmin, port]}
+                scheme: {get_param: [EndpointMap, TrilioDatamoverApiAdmin, protocol]}
+                host: {get_param: [EndpointMap, TrilioDatamoverApiAdmin, host]}
+                port: {get_param: [EndpointMap, TrilioDatamoverApiAdmin, port]}
                 path: /v2
           region: {get_param: KeystoneRegion}
           service: 'datamover'
