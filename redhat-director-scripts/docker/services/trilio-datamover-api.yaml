@@ -76,7 +76,7 @@ outputs:
                 host: {get_param: [EndpointMap, TrilioDmApiAdmin, host]}
                 port: {get_param: [EndpointMap, TrilioDmApiAdmin, port]}
                 path: /v2
-		      region: {get_param: KeystoneRegion}
+          region: {get_param: KeystoneRegion}
           service: 'datamover'
       service_config_settings:
         haproxy:
