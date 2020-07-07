@@ -59,24 +59,24 @@ outputs:
         dmapi:
           endpoints:
             public:
-		          make_url:
+              make_url:
                 scheme: {get_param: [EndpointMap, TrilioDmApiPublic, protocol]}
                 host: {get_param: [EndpointMap, TrilioDmApiPublic, host]}
                 port: {get_param: [EndpointMap, TrilioDmApiPublic, port]}
                 path: /v2
             internal:
-		          make_url:
+              make_url:
                 scheme: {get_param: [EndpointMap, TrilioDmApiInternal, protocol]}
                 host: {get_param: [EndpointMap, TrilioDmApiInternal, host]}
                 port: {get_param: [EndpointMap, TrilioDmApiInternal, port]}
                 path: /v2
             admin:
-		          make_url:
+              make_url:
                 scheme: {get_param: [EndpointMap, TrilioDmApiAdmin, protocol]}
                 host: {get_param: [EndpointMap, TrilioDmApiAdmin, host]}
                 port: {get_param: [EndpointMap, TrilioDmApiAdmin, port]}
                 path: /v2
-		  region: {get_param: KeystoneRegion}
+		      region: {get_param: KeystoneRegion}
           service: 'datamover'
       service_config_settings:
         haproxy:
